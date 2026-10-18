@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #1b1b2f; color: #f1f1f1; }
+main { max-width: 560px; margin: 0 auto; padding: 24px 16px; text-align: center; }
+.card { background: #26264a; border-radius: 14px; padding: 20px; margin-top: 16px; }
+input, textarea { width: 100%; padding: 12px; border-radius: 8px; border: 0; font: inherit; margin-bottom: 12px; }
+textarea { resize: vertical; min-height: 80px; }
+button { padding: 12px 20px; border: 0; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer; background: #6c63ff; color: #fff; margin: 4px; }
+button:disabled { opacity: .4; cursor: default; }
+button.truth { background: #2ea36b; }
+button.lie { background: #d9534f; }
+.choice button { opacity: .5; }
+.choice button.sel { opacity: 1; outline: 3px solid #fff; }
+.hint { color: #9a9ac4; font-size: .9rem; }
+#scores { display: flex; justify-content: space-around; font-size: 1.1rem; }
+#scores b { font-size: 1.6rem; display: block; }
+.answer { background: #1b1b2f; border-radius: 10px; padding: 14px; font-size: 1.15rem; margin: 12px 0; min-height: 3em; }
+.result { font-size: 1.3rem; margin: 12px 0; }
+#chatLog { max-height: 180px; overflow-y: auto; text-align: left; margin-bottom: 12px; }
+#chatLog p { margin: 4px 0; word-break: break-word; }
+#chatLog b { color: #9a9ac4; }
+#chatForm { display: flex; gap: 8px; }
+#chatForm input { margin: 0; flex: 1; }
+#chatForm button { margin: 0; }
+.ok { color: #5fe0a0; }
+.ko { color: #ff7a76; }

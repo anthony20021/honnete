@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menteur ou honnête ?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>🤥 Menteur ou honnête ?</h1>
+
+    <section id="join" class="card">
+      <input id="name" placeholder="Ton prénom" maxlength="20" autofocus>
+      <button id="joinBtn">Rejoindre</button>
+      <p id="fullMsg" class="hint" hidden>La partie est pleine (2 joueurs).</p>
+    </section>
+
+    <section id="game" class="card" hidden>
+      <div id="scores"></div>
+      <p id="roundInfo" class="hint"></p>
+      <h2 id="question"></h2>
+      <div id="content"></div>
+    </section>
+
+    <section id="chat" class="card" hidden>
+      <div id="chatLog"></div>
+      <form id="chatForm">
+        <input id="chatInput" placeholder="Message…" maxlength="300" autocomplete="off">
+        <button>Envoyer</button>
+      </form>
+    </section>
+  </main>
+  <script src="client.js"></script>
+</body>
+</html>
